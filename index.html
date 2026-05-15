@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site - Escola</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎓 Meu Site - Escola</h1>
+        <p>Bem-vindo ao nosso portal educacional</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="inicio" class="hero">
+            <h2>Bem-vindo à Nossa Escola</h2>
+            <p>Oferecemos educação de qualidade com foco no desenvolvimento integral dos nossos alunos.</p>
+        </section>
+
+        <section id="sobre" class="section">
+            <h2>Sobre Nós</h2>
+            <p>Nossa instituição é dedicada a proporcionar uma educação excelente, preparando nossos alunos para os desafios do futuro. Contamos com uma equipe de professores qualificados e modernos recursos educacionais.</p>
+        </section>
+
+        <section id="cursos" class="section">
+            <h2>Nossos Cursos</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>📚 Ensino Fundamental</h3>
+                    <p>Desenvolvimento das habilidades básicas e aprendizado essencial para formar uma base sólida.</p>
+                </div>
+                <div class="card">
+                    <h3>📖 Ensino Médio</h3>
+                    <p>Preparação para o ENEM e vestibulares com conteúdo atualizado e metodologia moderna.</p>
+                </div>
+                <div class="card">
+                    <h3>💻 Cursos Técnicos</h3>
+                    <p>Formação profissional em áreas como Informática, Administração e muitas outras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Entre em Contato</h2>
+            <p><strong>Email:</strong> contato@escolaexemplo.com</p>
+            <p><strong>Telefone:</strong> (00) 1234-5678</p>
+            <p><strong>Endereço:</strong> Rua da Educação, 123 - Sua Cidade, Estado</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Meu Site - Escola. Todos os direitos reservados.</p>
+        <p>Hospedado com ❤️ no GitHub Pages</p>
+    </footer>
+</body>
+</html>
